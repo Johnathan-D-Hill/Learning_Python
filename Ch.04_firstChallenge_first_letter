@@ -6,7 +6,7 @@
 # c.) Then, convert that letter to uppercase
 # d.) Finally, display it back to the user
 # -------------------------------------------
-#
+
 # Brainstorming the Logic
 # -----------------------
 # Variables required;
@@ -24,3 +24,15 @@ userInput = input(prompt)
 userInputFirLet = userInput
 userInputFirLetUp = userInputFirLet.upper()
 print("The first letter of your password in uppercase is: " + userInputFirLetUp[0])
+
+# Additional Notes;
+# the section;
+#   |- userInput = input(prompt)
+#   |- userInputFirLet = userInput
+#   |- userInputFirLetUp = userInputFirLet.upper()
+# Can be visualized as follows;
+# (From top down)
+# "input(prompt)" = asks user for their password then assigns it to the variable titled "userInput"
+# "userInput" data is then fed to a new variable titled "userInputFirLet"
+# "userInputFirLetUp" is modified via the '.upper()' function at "userInputFirLet.upper()" and that new data is fed to "userInputFirLetUp"
+# "userInputFirLetUp[0]" slices the data at "userInputFirLetUp" and transforms the 1st character (at the [0] mark) to uppercase
