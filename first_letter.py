@@ -1,0 +1,27 @@
+# Challenge 4.5: Pick Apart Your User's Input
+# -------------------------------------------
+# Write a program named "frist_letter.py"
+# a.) Have the program prompt the user for input with the string "Tell me your password:"
+# b.) Next, have the program determine the first letter of the user's input
+# c.) Then, convert that letter to uppercase
+# d.) Finally, display it back to the user
+# -------------------------------------------
+#
+# Brainstorming the Logic
+# -----------------------
+# Variables required;
+#   - Prompt to request from user; "Tell me your password:"
+#   - String Literal to capture user input
+#   - String Literal to transform the input to uppercase
+# -------------------------------------------
+prompt = '''This program will ask for your password,
+determine what the first letter of your password is,
+format that first letter to uppercase,
+then print it out back to you.
+
+Please, tell me your password: '''
+userInput = input(prompt)
+userInputFirLet = userInput
+userInputFirLetUp = userInputFirLet.upper()
+print("The first letter of your password in uppercase is: " + userInputFirLetUp[0])
+
