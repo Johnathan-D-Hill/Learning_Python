@@ -24,4 +24,3 @@ userInput = input(prompt)
 userInputFirLet = userInput
 userInputFirLetUp = userInputFirLet.upper()
 print("The first letter of your password in uppercase is: " + userInputFirLetUp[0])
-
